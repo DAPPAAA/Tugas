@@ -1,0 +1,79 @@
+
+import java.util.Scanner;
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+/**
+ *
+ * @author daff9
+ */
+public class hayuk {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+         String jm,gp;
+        System.out.println("Masukkan pilihan jalur \n 1. SBMPTN \n 2. SNMPTN \n 3. MANDIRI ");
+        jm= in.next();
+        if (jm.equalsIgnoreCase("SBMPTN")){
+            System.out.println("Pilih golongan pendaftaran \n A \n B \n C");
+            gp = in.next();
+            if (gp.equalsIgnoreCase("A")){
+                System.out.println("DSP = 5 juta");
+                System.out.println("SPP = 500 ribu");
+            }
+            else if (gp.equalsIgnoreCase("B")){
+                System.out.println("DSP = 15 juta ");
+                System.out.println("SPP = 1 juta");
+            }
+            else if (gp.equalsIgnoreCase("C")){
+                System.out.println("DSP = 30 juta ");
+                System.out.println("SPP = 2 juta ");
+            }
+             else {
+            System.out.println("MAAF PILIHAN ANDA TIDAK TERDAFTAR");}
+            
+        }else if (jm.equalsIgnoreCase("SNMPTN")){
+            System.out.println("Pilih golongan pendaftaran \n A \n B \n C");
+            gp = in.next();
+            if (gp.equalsIgnoreCase("A")){
+                System.out.println("DSP = 7 juta");
+                System.out.println("SPP = 500 ribu");
+            }
+            else if (gp.equalsIgnoreCase("B")){
+                System.out.println("DSP = 17 juta");
+                System.out.println("SPP = 1 juta");
+            }
+            else if (gp.equalsIgnoreCase("C")){
+                System.out.println("DSP = 35 juta");
+                System.out.println("SPP = 2 juta");
+            }
+             else {
+            System.out.println("MAAF PILIHAN ANDA TIDAK TERDAFTAR");
+        }}
+        else if (jm.equalsIgnoreCase("Mandiri")){
+           System.out.println("Pilih golongan pendaftaran \n A \n B \n C");
+            gp = in.next();
+            if (gp.equalsIgnoreCase("A")){
+                System.out.println("DSP = 10 juta ");
+                System.out.println("SPP = 1 juta ");
+                }
+            else if (gp.equalsIgnoreCase("B")){
+                System.out.println("DSP = 25 juta");
+                System.out.println("SPP = 2 juta");
+                }
+            else if (gp.equalsIgnoreCase("C")){
+                System.out.println("DSP = 50 juta");
+                System.out.println("SPP = 3 juta");
+                        }
+            else {
+            System.out.println("MAAF PILIHAN ANDA TIDAK TERDAFTAR");
+            }
+        }
+        else {
+            System.out.println("MAAF JALUR ANDA TIDAK TERDAFTAR");
+        }}
+    
+}
