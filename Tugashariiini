@@ -1,0 +1,48 @@
+package tugasgabungan;
+
+import java.util.Scanner;
+
+public class Tugasgabungan {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int pil;
+        System.out.println("Jual Mobil Malang");
+        System.out.println("1.Toyots Innova");
+        System.out.println("2.Honda civic");
+        System.out.println("3.Suzuki Ertiga");
+        System.out.println("Masukan pilihan Nobil: ");
+        pil = in.nextInt();
+        if (pil == 1) {
+            System.out.println("Harga Mobil : 400 juta ");
+        } else if (pil == 2) {
+            System.out.println("Harga Mobil : 1 miliar");
+        } else if (pil == 3) {
+            System.out.println("Harga Mobil : 250 juta ");
+        }
+          else
+            System.out.println("kode yang Anda masukan Salah");
+        for (int i = 1; i > 0; i--) {
+
+            for (int a = 1; a < 0; a++) {
+            }
+            System.out.println("Apakah anda sudah yakin? ");
+            System.out.println("1.ya");
+            System.out.println("2.tidak");
+            System.out.println("pilih");
+            pil = in.nextInt();
+            switch (pil) {
+                case 1:
+                    System.out.println("Harga Mobil : 400 juta ");
+                    break;
+                case 2:
+                    System.out.println("Harga Mobil : 1 miliar");
+                    break;
+                case 3:
+                    System.out.println("Harga Mobil : 250 juta ");
+                    break;
+
+            }
+        }
+    }
+}
