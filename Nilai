@@ -1,0 +1,60 @@
+
+import java.util.Scanner;
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author daff9
+ */
+public class bmI {
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+        
+        int[] lobang1={0,0,0,0,0};
+        int ini=0;
+        int display=1;
+        boolean mengulang=true;
+        while(mengulang==true){
+            for(int i=0;i<lobang1.length;i++){
+            System.out.println("Inputkan 1-1000 angka ke "+display+": ");
+            display++;
+            lobang1[i]=input.nextInt();
+            }
+            display=1;
+        for(int i=0;i<lobang1.length;i++){
+        if(lobang1[i]<=60){
+            System.out.println("Angka ke "+display+": "+lobang1[i]+" KURANG");
+        } else if (lobang1[i]<=70){
+            System.out.println("Angka ke "+display+": "+lobang1[i]+" CUKUP");
+        } else if (lobang1[i]<=80){
+            System.out.println("Angka ke "+display+": "+lobang1[i]+" CUKUP BAIK");
+        } else if (lobang1[i]<=90){
+            System.out.println("Angka ke "+display+": "+lobang1[i]+" BAIK");
+        } else if (lobang1[i]<=100) {
+            System.out.println("Angka ke "+display+": "+lobang1[i]+" SEMPURNA MAZZEH");
+        } else {
+            System.out.println("Angka ke "+display+": "+lobang1[i]+" DILUAR NALAR");
+        }
+        display++;
+        }
+        //-60 KURANG
+        //-70 CUKUP
+        //-80 BAIK
+        //-90 CUKUP BAIK
+        //-100 BAIK
+        System.out.println("Mau mengulang? ");
+        String asc = input.next();
+                if(asc.equalsIgnoreCase("n")){
+                    mengulang=false;
+                }
+        }
+    }
+    
+}
+
